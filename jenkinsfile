@@ -1,5 +1,5 @@
 pipeline {
-    agent { label "javasgent" }
+    agent { label "javaslave" }
     stages {
         stage('Hello') {
             steps {
@@ -8,14 +8,3 @@ pipeline {
         }
     }
 }
-pipeline {
-    agent { label "javasgent" }
-    stages {
-        stage('Hello') {
-            steps {
-                echo 'Hello World from Fusion'
-            }
-        }
-    }
-}
-
